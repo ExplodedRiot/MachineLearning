@@ -15,4 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+
+    Route::get('/document/convert-word-to-pdf', 'DocumentController@convertWordToPDF')->name('document.wordtopdf');
+
 });
